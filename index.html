@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Thisys - PedoMeter App</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css"/>		
+
+        <!-- jQuery / jQueryMobile Scripts -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>		
+		
+    </head>
+    <body>
+        <div data-role="page" data-theme='b'>
+		
+			<div data-role="panel" data-display="push" id="mypanel" data-theme="a"></div>
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+				<a href="#mypanel" data-role='button' data-inline='true'><i class='fa fa-bars'></i></a>
+				<h1>Thisys - PedoMeter App</h1>
+			</div>
+			
+			<div data-role="content">  
+			
+				<div id="die"></div>
+				
+				<img src="img/logo_dashboard.png" width="330" style="margin:15px 0 0 60px">
+			
+				<div data-role="navbar">
+					<ul style="margin-left:15px;">
+						<img  src="img/walk.png" width="30"  style="text-align:center;">
+						
+		
+						<li>Walk Count <h1>1201 </h1></li>
+				
+						
+						<img  src="img/run.png" width="30" style="text-align:center;">
+						
+						
+						<li>Run Count <h1>1866</h1></li>
+						</ul>
+				</div>			    
+                
+				<ul data-nativedroid-plugin='cards'>
+				
+                    <li data-cards-type='weather'>
+                        
+					<div id="myLocation" class="text-center"></div>
+						
+                        <ul class='detail'>
+                            <li><i class='fa fa-sun-o sunny'></i></li>
+							<li><div id="today">
+									<div class="panel-body"></div>
+								</div>
+							</li>
+                        </ul>
+						
+                    </li>		
+
+					<li data-cards-type='sports'>
+             
+                        <h1>Walking Tasks<span>4</span></h1>
+                        <h1>Jacking Tasks<span>1</span></h1>
+                        <a href='pedometer.html'>more...</a>
+                    </li>
+					
+				</ul>
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#hours" data-role="tab" data-icon="grid" >Hours</a></li>
+						<li><a href="#days" data-role="tab" data-icon="grid">Days</a></li>
+						<li><a href="#months" data-role="tab" data-icon="grid">Months</a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+
+		   <div data-role="footer">
+                <small>Copyrght &copy; SurveyFace App</small>
+            </div>
+			
+        </div>
+		
+		<div data-role="page" id="#hours" data-theme='b'>test
+		</div>
+		
+		<script type="text/javascript" src="js/nativedroid.script.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+		
+    </body>
+</html>
